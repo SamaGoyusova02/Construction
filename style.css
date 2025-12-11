@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+.bgblack {
+    background: black;
+}
+
+.txtwhite {
+    color: white;
+}
+
+.headertop {
+    display: flex;
+    justify-content: space-between;
+    height: 50px;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.headertop i {
+    color: orange;
+}
+
+header {
+    background: #d1e3ff;
+    height: 5vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul {
+    display: none;
+}
+
+header span {
+    color: #0355cc;
+    font: 1.4em Montserrat;
+    font-weight: 900;
+    padding-top: 20px;
+}
+
+header span:hover {
+    color: black;
+}
+
+header i {
+    display: block;
+    font-size: 1.4em;
+    padding: 5px 10px 0 0;
+}
+
+.common {
+    background: #d1e3ff;
+
+}
+
+.common h2 {
+    color: #0355cc;
+    font: 2em Montserrat;
+    padding: 60px 0 30px 0;
+    width: 40%;
+    padding-left: 5px;
+}
+
+.common p {
+    padding-left: 5px;
+    width: 95%;
+    padding-bottom: 60px;
+}
+
+.common a {
+    background: orange;
+    color: #fff;
+    padding: 10px;
+    margin: 30px 0 0 5px;
+}
+.common a:hover{
+    background: transparent;
+    color: #0355cc;
+    border: 2px solid #0355cc;
+    transition: .5s ease;
+}
+
+.common img {
+    width: 90%;
+}
+
+
+
+
+@media only screen and (min-width: 768px) {
+
+
+    ul {
+        display: flex;
+    }
+
+    ul li a {
+        display: flex;
+        padding-right: 3vw;
+        padding-top: 10px;
+        color: black;
+        font: 1em "Montserrat";
+    }
+
+    ul li a:hover {
+        color: #0355cc;
+        transition: .3s ease;
+    }
+
+    .menubar {
+        display: none;
+    }
+
+    .common {
+        display: flex;
+        justify-content:space-around;
+        
+    }
+
+    .picture {
+        width: 40%;
+        padding-top:4vh;
+    }
+
+    .text {
+        width: 50%;
+        padding-top: 17vh;
+    }
+
+
+}
