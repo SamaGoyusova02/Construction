@@ -6,6 +6,8 @@
     text-decoration: none;
 }
 
+
+
 .bgblack {
     background: black;
 }
@@ -28,110 +30,811 @@
 
 header {
     background: #d1e3ff;
-    height: 5vh;
+}
+
+.menubar {
     display: flex;
     justify-content: space-between;
+    padding: 10px 20px;
 }
 
-ul {
-    display: none;
+.menubar i {
+    font-size: 1.3em;
 }
 
-header span {
-    color: #0355cc;
+.menubar h2 {
     font: 1.4em Montserrat;
-    font-weight: 900;
-    padding-top: 20px;
-}
-
-header span:hover {
-    color: black;
-}
-
-header i {
-    display: block;
-    font-size: 1.4em;
-    padding: 5px 10px 0 0;
-}
-
-.common {
-    background: #d1e3ff;
-
-}
-
-.common h2 {
     color: #0355cc;
-    font: 2em Montserrat;
-    padding: 60px 0 30px 0;
-    width: 40%;
-    padding-left: 5px;
 }
 
-.common p {
-    padding-left: 5px;
-    width: 95%;
-    padding-bottom: 60px;
-}
-
-.common a {
-    background: orange;
-    color: #fff;
-    padding: 10px;
-    margin: 30px 0 0 5px;
-}
-.common a:hover{
-    background: transparent;
-    color: #0355cc;
-    border: 2px solid #0355cc;
+.menubar h2:hover {
+    color: #f37a09;
+    text-shadow: 2px 2px 5px #0355cc;
     transition: .5s ease;
 }
 
-.common img {
-    width: 90%;
+.menutext {
+    display: none;
 }
 
+.headerend {
+    display: flex;
+    flex-direction: column;
+}
+
+.endtext {
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+.endtext h2 {
+    color: #0355cc;
+    font: bold 2em "Proxima Nova";
+    width: 40%;
+
+}
+
+.endtext p {
+    margin-top: 10px;
+}
+
+.endimg img {
+    width: 100%;
+}
+
+.endtext a {
+    display: inline-block;
+    background: #f37a09;
+    color: #fff;
+    width: 160px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 3px;
+    margin-top: 20px;
+    box-shadow: 2px 2px 5px #0355cc;
+}
+
+.endtext a:hover {
+    background: transparent;
+    border: 2px solid #0355cc;
+    color: #f37a09;
+    transition: .5s ease;
+    font-weight: 700;
+}
+
+.endimg {
+    padding-top: 20px;
+}
+
+.mainpart1 {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+.card1 i {
+    padding-left: 20px;
+}
+
+.card2 i {
+    padding-left: 30px;
+}
+
+.card3 i {
+    padding-left: 30px;
+}
+
+.mainpart1 .card1 {
+    border: none;
+    padding: 70px;
+    width: 50%;
+    margin: 30px 0;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.409);
+}
+
+.mainpart1 .card2 {
+    border: none;
+    padding: 70px;
+    width: 50%;
+    margin: 30px 0;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.409);
+}
+
+.mainpart1 .card3 {
+    border: none;
+    padding: 70px;
+    width: 50%;
+    margin: 30px 0;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.409);
+}
+
+.mainpart1 .card1 p {
+    font-size: 1.3em;
+}
+
+.mainpart1 .card1 i {
+    font-size: 1.4em;
+}
+
+.mainpart1 .card2 p {
+    font-size: 1.3em;
+}
+
+.mainpart1 .card2 i {
+    font-size: 1.4em;
+}
+
+.mainpart1 .card3 p {
+    font-size: 1.3em;
+}
+
+.mainpart1 .card3 i {
+    font-size: 1.4em;
+}
+
+.mainpart1 .card1:hover {
+    background: #f37a09;
+    color: #fff;
+}
+
+.mainpart1 .card2:hover {
+    background: #f37a09;
+    color: #fff;
+}
+
+.mainpart1 .card3:hover {
+    background: #f37a09;
+    color: #fff;
+}
+
+.about .aboutimg {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.about .abouttext {
+    width: 100%;
+}
+
+.aboutimg img {
+    width: 300px;
+    padding: 30px 0 30px 15px;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-family: Montserrat;
+    padding: 10px 0 0 20px;
+}
+
+.abouttext p {
+    padding: 10px 0 30px 20px;
+}
+
+.abouttext a {
+    background: #0355cc;
+    color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 10px 0 0 20px;
+    text-transform: uppercase;
+    box-shadow: 0 0 25px rgb(94, 168, 230);
+}
+
+.abouttext a:hover {
+    background: #f37a09;
+    color: white;
+    transition: .5s ease;
+}
+
+.provide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background: #d1e3ff;
+    width: 100%;
+}
+
+.provide .proimg img {
+    width: 300px;
+
+}
+
+.provide .proimg {
+    width: 100%;
+    padding-top: 30px;
+}
+
+.provide .protext {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.provide .protext h2 {
+    color: #0355cc;
+    font-family: Montserrat;
+    padding-bottom: 15px;
+}
+
+.provide .protext p {
+    font-family: "Proxima Nova";
+    padding-bottom: 20px;
 
 
+}
+
+.provide .protext a {
+    background: #f37a09;
+    color: #fff;
+    padding: 10px 30px;
+    box-shadow: 0 0 25px #f37a09;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+
+}
+
+.provide .protext a:hover {
+    background: #0355cc;
+    transition: .5s ease;
+}
+
+.servicepart3 .service1 img {
+    width: 80px;
+}
+
+.servicepart3 .service2 img {
+    width: 80px;
+}
+
+.servicepart3 .service3 img {
+    width: 80px;
+}
+
+.servicepart {
+    text-align: center;
+}
+
+.servicepart h2 {
+    padding-top: 40px;
+    font-family: Montserrat;
+
+}
+
+.servicepart3 .service1 {
+    border: none;
+    width: 300px;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.475);
+
+}
+
+.servicepart3 .service2 {
+    border: none;
+    width: 300px;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.475);
+}
+
+.servicepart3 .service3 {
+    border: none;
+    width: 300px;
+    text-align: center;
+    padding: 20px 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.475);
+}
+
+.servicepart3 .service1:hover {
+    background: #f37a09;
+    color: #fff;
+}
+
+.servicepart3 .service2:hover {
+    background: #f37a09;
+    color: #fff;
+
+}
+
+.servicepart3 .service3:hover {
+    background: #f37a09;
+    color: #fff;
+}
+
+.servicepart3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.servicepart a {
+    background: #0355cc;
+    color: #fff;
+    padding: 10px 30px;
+    box-shadow: 0 0 25px #f37a09;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.servicepart a:hover {
+    background: #f37a09;
+    box-shadow: 0 0 25px #f37a09;
+    transition: .5s ease;
+    font-size: 1.2em;
+}
+
+.contact1 form {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    gap: 20px;
+    width: 100%;
+
+}
+
+.contact h2 {
+    text-align: center;
+    margin: 30px 0;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact a {
+    background: #0355cc;
+    padding: 10px 60px;
+    border-radius: 5px;
+    color: #fff;
+    box-shadow: 0 0 25px #0353cc81;
+
+
+}
+
+.contact a:hover {
+    background: transparent;
+    border: 2px solid #0355cc;
+    color: #0355cc;
+    font-size: 1.3em;
+    transition: .5s ease;
+}
+
+.contact1 form :nth-child(1) {
+    height: 40px;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.477);
+    outline: none;
+    border: none;
+}
+
+.contact1 form ::placeholder {
+    color: black;
+    padding-left: 5px;
+}
+
+.contact1 form :nth-child(2) {
+    height: 40px;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.477);
+    outline: none;
+    border: none;
+}
+
+.contact1 form :nth-child(3) {
+    height: 40px;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.477);
+    outline: none;
+    border: none;
+}
+
+.contact1 form :nth-child(4) {
+    height: 130px;
+    color: black;
+    padding: 5px 0 0 5px;
+    margin-bottom: 40px;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.477);
+    outline: none;
+    border: none;
+}
+
+.contact2 iframe {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    box-shadow: 0 0 25px rgba(128, 128, 128, 0.514);
+}
+
+.contact1 h2 {
+    font-family: Montserrat;
+    text-shadow: 0 0 25px #0353cc81;
+}
+
+/*footer*/
+.us1 .location i {
+    font-size: 2.5em;
+
+}
+
+.us1 .location {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #0355cc;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 20px 0;
+    background: #0355cc;
+    color: #fff;
+    box-shadow: 0 0 25px #0355cc;
+}
+
+.us1 .location:hover {
+    background: #f37a09;
+    transition: .5s ease;
+
+}
+
+.us2 hr {
+    width: 4px;
+    height: 180px;
+    background: white;
+    margin-top: 20px;
+}
+
+.us3 .phone i {
+    font-size: 2.5em;
+
+}
+
+.us3 .phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #0355cc;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 20px 0;
+    background: #0355cc;
+    color: #fff;
+    box-shadow: 0 0 25px #0355cc;
+}
+
+.us3 .phone:hover {
+    background: #f37a09;
+    transition: .5s ease;
+
+
+}
+
+.us4 hr {
+    width: 4px;
+    height: 180px;
+    background: white;
+    margin-top: 20px;
+}
+
+.us5 .envolope i {
+    font-size: 2.5em;
+
+}
+
+.us5 .envolope {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: #0355cc;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    margin: 20px 0;
+    background: #0355cc;
+    color: #fff;
+    box-shadow: 0 0 25px #0355cc;
+}
+
+.us5 .envolope:hover {
+    background: #f37a09;
+    transition: .5s ease;
+
+}
+
+.infoot1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.us1,
+.us3,
+.us5 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.foot1 {
+    text-align: center;
+    background: #0a0f43;
+    color: #fff;
+}
+
+.footer {
+    background: #0a0f43;
+}
+
+.foot1 h2 {
+    padding: 30px 0;
+    font-family: Montserrat;
+    box-shadow: 0 0 25px #8390a47d;
+    margin-top: 50px;
+}
+
+.hr2 {
+    display: none;
+}
+
+.hr4 {
+    display: none;
+}
+
+.foot2 {
+    background: #0a0f43;
+    color: #fff;
+    text-align: center;
+}
+
+.foot2 h2 {
+    font-family: Montserrat;
+    padding-top: 80px;
+}
+
+.followicon i {
+    font-size: 2em;
+    padding-top: 15px;
+
+}
+
+.longhr {
+    padding: 0 10px;
+    height: 3px;
+    background: white;
+    margin-top: 30px;
+}
+
+.enddd {
+    height: 50px;
+    background: #0a0f43;
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+}
 
 @media only screen and (min-width: 768px) {
-
-
-    ul {
-        display: flex;
-    }
-
-    ul li a {
-        display: flex;
-        padding-right: 3vw;
-        padding-top: 10px;
-        color: black;
-        font: 1em "Montserrat";
-    }
-
-    ul li a:hover {
-        color: #0355cc;
-        transition: .3s ease;
-    }
-
-    .menubar {
+    .menubar i {
         display: none;
     }
 
-    .common {
+    .menutext {
         display: flex;
-        justify-content:space-around;
-        
+        gap: 15px;
+        padding-left: 10px;
     }
 
-    .picture {
-        width: 40%;
-        padding-top:4vh;
+    .menutext p {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-right: 10px;
     }
 
-    .text {
+    .menutext p:hover {
+        color: #0355cc;
+        transition: .5s ease;
+        font-size: 1.1em;
+        text-shadow: 2px 2px 5px #0355cc;
+    }
+
+    .hedaerend {
+        display: flex;
+        justify-content: space-around;
+
+    }
+
+    .headerend .endtext {
         width: 50%;
-        padding-top: 17vh;
+
     }
 
+    .headerend .endimg {
+        width: 50%;
+    }
+
+    .hedaerend .endtext {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .endtext p {
+        width: 40%;
+        padding-bottom: 15px;
+    }
+
+    .endtext h2 {
+        width: 20%;
+        padding-bottom: 10px;
+    }
+
+    .mainpart1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 40px;
+        flex-wrap: wrap;
+    }
+
+    .mainpart1 .card1 {
+        padding: 80px 110px;
+        width: initial;
+    }
+
+    .mainpart1 .card2 {
+        padding: 80px 110px;
+        width: initial;
+    }
+
+    .mainpart1 .card3 {
+        padding: 80px 110px;
+        width: initial;
+
+    }
+
+    .about {
+        display: flex;
+    }
+
+    .about .aboutimg {
+        width: 50%;
+    }
+
+    .about .abouttext {
+        width: 50%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .about .aboutimg {
+        width: 50%;
+    }
+
+    .about .abouttext p {
+        width: 60%;
+        font: 1.3em "Proxima Nova";
+    }
+
+    .about .aboutimg img {
+        width: 600px;
+    }
+
+    .about .abouttext {
+        width: 50%;
+
+    }
+
+    .provide {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .provide .proimg {
+        width: 50%;
+    }
+
+    .provide .proimg img {
+        width: 600px;
+    }
+
+    .provide .protext {
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .protext p {
+        width: 60%;
+    }
+
+    .protext h2 {
+        width: 60%;
+    }
+
+    .protext a {
+        width: 160px;
+    }
+
+    .servicepart3 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        margin-top: 40px;
+
+    }
+
+    .contact1 form {
+        width: 450px;
+    }
+
+    .contact1 form {
+        display: flex;
+    }
+
+    .incontact {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .contact2 iframe {
+        width: 600px;
+        height: 400px;
+    }
+
+    .infoot1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding-top: 50px;
+
+    }
+
+    .us2 hr {
+        display: none;
+    }
+
+    .us4 hr {
+        display: none;
+    }
+
+    .hr2 {
+        display: block;
+        height: 4px;
+        width: 200px;
+        background: white;
+    }
+
+    .hr4 {
+        display: block;
+        height: 4px;
+        width: 200px;
+        background: white;
+    }
 
 }
